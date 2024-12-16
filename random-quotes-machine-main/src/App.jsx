@@ -8,6 +8,7 @@ function App() {
   function getRandomQoute() {
     return qoutes[Math.floor(Math.random() * qoutes.length)];
   }
+
   function changeQoute() {
     setRandomColor(getRandomColor());
     setQoute(getRandomQoute());
@@ -18,6 +19,7 @@ function App() {
     const green = Math.floor(Math.random() * 128);
     return `rgb(${red},${green},${blue})`;
   }
+  
   const transition ="all 1s"
   return (
     <div className=" background" style={{ backgroundColor: randomColor,transition }}>
